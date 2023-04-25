@@ -15,8 +15,34 @@ tensorboardX==2.1<br>
 torchvision==0.12.0<br>
 opencv-python==4.5.5<br>
 
-## Installation
+## Usage
+1. Clone the repository：
+```
+git clone https://github.com/SJTU-Intelligent-Optics-Lab/Annotation-efficient-learning-for-OCT-segmentation.git
+```  
 
+2. Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+3. Download the pre-trained [phase1 model file](https://jbox.sjtu.edu.cn/l/d1pZvS) for weights of encoder and [phase2 model file](https://jbox.sjtu.edu.cn/l/t1vDE7) for weights of decoder, and then put them in `./runs/` folder.
 
-## Training
-[ceshi](https://jbox.sjtu.edu.cn/l/41vRwi)
+4. Edit suitable path and parameters in main.py
+
+5. Go to the corresponding folder and run:
+```
+cd Annotation-efficient-learning-for-OCT-segmentation
+python main.py
+```
+
+## Training on your Dataset
+The prepared architecture of dataset is referenced to `./dataset/` folder containing `train_fewshot_data` and `val_fewshot_data`. The name index of images is listed in `train_fewshot_data.txt` and `val_fewshot_data.txt`.
+
+## Citation
+```
+@article{OSA,
+  Title          = {Annotation-efficient learning for OCT segmentation},
+  Author         = {HAORAN ZHANG, JIANLONG YANG, CE ZHENG, SHIQING ZHAO, AILI ZHANG},
+  Year           = {2023}
+}
+```
