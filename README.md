@@ -41,8 +41,8 @@ The prepared architecture of dataset is referenced to `./dataset/` folder contai
 ## Citation
 ```
 @article{OSA,
-  Title          = {Annotation-efficient learning for OCT segmentation},
-  Author         = {HAORAN ZHANG, JIANLONG YANG, CE ZHENG, SHIQING ZHAO, AILI ZHANG},
-  Year           = {2023}
+  Title = {Annotation-efficient learning for OCT segmentation},
+  Author = {HAORAN ZHANG, JIANLONG YANG, CE ZHENG, SHIQING ZHAO, AILI ZHANG},
+  Year = {2023}
 }
 ```
