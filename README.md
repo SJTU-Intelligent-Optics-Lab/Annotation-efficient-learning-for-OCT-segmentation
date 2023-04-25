@@ -5,7 +5,7 @@ This repository contains the code for paper "Annotation-efficient learning for O
 ![Overview](images/Figure%201.png)
 ![Model architecture](images/Figure%202.png)
 
-## Installing Dependencies 
+## Dependencies 
 python==3.8<br>
 torch==1.11.1<br>
 numpy==1.19.5<br>
@@ -14,3 +14,9 @@ timm==0.3.2<br>
 tensorboardX==2.1<br>
 torchvision==0.12.0<br>
 opencv-python==4.5.5<br>
+
+## Installation
+
+
+## Training
+[ceshi](https://jbox.sjtu.edu.cn/l/41vRwi)
