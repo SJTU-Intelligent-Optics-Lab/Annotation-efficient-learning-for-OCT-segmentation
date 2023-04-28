@@ -46,7 +46,7 @@ def main(train,val):
     parser.add_argument("--res_block", default=True,type=bool, help="use residual blocks")
     parser.add_argument("--conv_block", default=True,type=bool, help="use conv blocks")
     parser.add_argument('--input_size', default=224, type=int,help='images input size')#
-    parser.add_argument("--dropout_rate", default=0.2, type=float, help="dropout rate")
+    parser.add_argument("--dropout_rate", default=0.4, type=float, help="dropout rate")
     parser.add_argument("--lrschedule", default="warmup_cosine", type=str, help="type of learning rate scheduler")
     parser.add_argument("--warmup_epochs", default=10, type=int, help="number of warmup epochs")
     parser.add_argument("--smooth_dr", default=1e-6, type=float, help="constant added to dice denominator to avoid nan")
@@ -56,7 +56,7 @@ def main(train,val):
     args.amp = not args.noamp
 
     main_worker(gpu=0, args=args)
-    seed = 1244
+    seed = 666
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
     np.random.seed(seed)
