@@ -211,7 +211,7 @@ def val_epoch(model, loader, epoch=None, acc_func=None, args=None, model_inferer
                 w = w.cpu().numpy()
                 assert out.shape == target.shape, 'predict {} & target {} shape do not match'.format(out.shape, target.shape)
                 for i in range(out.shape[0]):
-                    out[i] = np.where(out[i]>0.6, 1, 0)
+                    out[i] = np.where(out[i]>0.5, 1, 0)
 
                     acc_list.append(dice(out[i],target[i]))
                     pre = np.array(out[i],dtype=np.uint8)
