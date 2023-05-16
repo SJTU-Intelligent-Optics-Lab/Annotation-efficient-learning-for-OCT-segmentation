@@ -25,7 +25,7 @@ git clone https://github.com/SJTU-Intelligent-Optics-Lab/Annotation-efficient-le
 ```
 pip install -r requirements.txt
 ```
-3. Download the pre-trained [phase1 model file]([https://jbox.sjtu.edu.cn/l/d1pZvS](https://pan.baidu.com/s/1McXDPicpd9JWSiyeIARNQg?pwd=4ufn)) for weights of encoder and [phase2 model file](https://jbox.sjtu.edu.cn/l/t1vDE7) for weights of decoder, and then put them in `./runs/` folder.
+3. Download the pre-trained [phase1 model file](https://pan.baidu.com/s/1McXDPicpd9JWSiyeIARNQg?pwd=4ufn) for weights of encoder and [phase2 model file](https://jbox.sjtu.edu.cn/l/t1vDE7) for weights of decoder, and then put them in `./runs/` folder.
 
 4. Edit suitable path and parameters in main.py
 
