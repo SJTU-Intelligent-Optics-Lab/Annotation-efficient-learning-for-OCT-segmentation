@@ -10,7 +10,7 @@ def euclidean_dist(x, y):
     dist = dist.clamp(min=1e-12).sqrt()
     return dist
 
-def k_center_greedy(matrix, budget: int, metric, device, random_seed=None, index=None, already_selected=None,
+def coreset_selection(matrix, budget: int, metric, device, random_seed=None, index=None, already_selected=None,
                     print_freq: int = 20):
     if type(matrix) == torch.Tensor:
         assert matrix.dim() == 2
@@ -102,7 +102,7 @@ def main(txtName, numpyName, caseList, budget, device, seed):
         min = int(torch.argmin(torch.sum(dis_matrix, dim=0), dim=0).numpy())
         already_selected.append(indexlist[min])
 
-    subset = k_center_greedy(matrix, budget=int(np.round(budget)),
+    subset = coreset_selection(matrix, budget=int(np.round(budget)),
                                            metric=euclidean_dist, device=device,
                                            random_seed=seed,
                                            already_selected=np.array(already_selected))
