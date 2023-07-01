@@ -1,6 +1,6 @@
 # Annotation-efficient-learning-for-OCT-segmentation
 
-This repository contains the code for paper "Annotation-efficient learning for OCT segmentation"(https://opg.optica.org/boe/fulltext.cfm?uri=boe-14-7-3294&id=531648). We propose an annotation-efficient learning method for OCT segmentation that could significantly reduce annotation costs and improve learning efficiency. Here we provide generative pre-trained transformer-based encoder and CNN-based segmentation decoder, both pretrained on open-access OCTdatasets. The proposed pre-trained model can be directly transfered to your ROI segmeantation based on OCT image. We hope this may help improve the intelligence and application penetration of OCT.
+This repository contains the code for the paper ["Annotation-efficient learning for OCT segmentation"](https://opg.optica.org/boe/fulltext.cfm?uri=boe-14-7-3294&id=531648). We propose an annotation-efficient learning method for OCT segmentation that could significantly reduce annotation costs and improve learning efficiency. Here we provide generative pre-trained transformer-based encoder and CNN-based segmentation decoder, both pretrained on open-access OCTdatasets. The proposed pre-trained model can be directly transfered to your ROI segmeantation based on OCT image. We hope this may help improve the intelligence and application penetration of OCT.
 
 ![Overview](images/Figure%201.png)
 ![Model architecture](images/Figure%202.png)
